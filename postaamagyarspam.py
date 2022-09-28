@@ -42,8 +42,8 @@ while(True):
     
     #############/----------------------------------------------------------------------\#############
     
-    kuldes = requests.post(url, data=ertekek).text
-    if valasz.status_code == 200:
+    kuldes = requests.post(url, data=ertekek)
+    if kuldes.status_code == 200:
         print(ertekek)
     else:
         print("nemjo :(")
