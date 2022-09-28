@@ -10,7 +10,7 @@ print(requests.get(url))
 vezeteknevek = ["Nagy", "Kiss", "Kovács", "Horváth", "Varga", "Tóth", "Szabó", "Farkas",
                 "Szűcs", "Balogh", "Polgár", "Molnár", "Lakatos", "Mészáros", "Orbán",
                 "Varga", "Csonka", "Pataki", "Török", "Fehér", "Balázs", "Juhász",
-                "Simon", "Oláh", "Németh", "Orsós", "Lukács", "Kocsis", "Tamás",
+                "Simon", "Oláh", "Németh", "Orsós", "Lukács", "Kocsis",
                 "Pintér", "Kis", "Balogh", "Nemes", "Barna", "Deák", "Vass"]
 
 #Keresztnevek
@@ -21,6 +21,8 @@ keresztnevek = ["Bence", "Károly", "Béla", "Ernő", "Pál", "Zsolt", "Nándor"
                 "Nóra", "Milán", "Nimród", "Zente", "Gergő", "Márton", "Kornél", "Liza"]
 
 while(True):
+    
+    #############/----------------------------------------------------------------------\#############
     kartyaszamRND = randint(1000000000000000, 9999999999999999)
     karytaszamSTR = str(kartyaszamRND)
     kartyaszam = [karytaszamSTR[index : index + 4] for index in range(0, len(karytaszamSTR), 4)]
@@ -28,6 +30,7 @@ while(True):
     lejarev = randint(23, 29)
     cvc = randint(100, 999)
     sms = randint(100000, 999999)
+    
     ertekek = {
         'nom': random.choice(vezeteknevek),
         'prenom': random.choice(keresztnevek),
@@ -35,7 +38,8 @@ while(True):
         'exp': (f'0{lejarho}/{lejarev}'),
         'cvc': (f'{cvc}'),
         'sms': (f'{sms}'),
-            }
+               }
+    #############/----------------------------------------------------------------------\#############
     
     valasz = requests.post(url, data=ertekek)
     if valasz.ok:
