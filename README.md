@@ -2,4 +2,4 @@
 Szemeteld szét te is ennek az adathalász oldalnak az adatbázisát te is ;)
 
 Szükséges hozzá: requests
-<h1>pip install requests</h1>
+<h3>pip install requests</h3>
