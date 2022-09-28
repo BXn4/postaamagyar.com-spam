@@ -15,7 +15,7 @@ while(True):
     lejarho = randint(1, 10)
     lejarev = randint(23, 29)
     cvc = randint(100, 999)
-    exp = lejarho
+    sms = randint(100000, 999999)
 
     ertekek = {
         'nom': random.choice(vezeteknevek),
@@ -23,7 +23,7 @@ while(True):
         'cc': (f'{kartyaszam0} {kartyaszam1} {kartyaszam2} {kartyaszam3}'),
         'exp': (f'0{lejarho}/{lejarev}'),
         'cvc': (f'{cvc}'),
-        #'sms': '012345',
+        'sms': (f'{sms}'),
             }
     
     #print(lejarev)
