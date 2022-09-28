@@ -39,10 +39,11 @@ while(True):
         'cvc': (f'{cvc}'),
         'sms': (f'{sms}'),
                }
+    
     #############/----------------------------------------------------------------------\#############
     
-    valasz = requests.post(url, data=ertekek)
-    if valasz.ok:
-        print(ertekek)
-    else:
-        print("nemjo :(")
+    valasz = requests.post(url, data=ertekek).text
+    ##if valasz.ok:
+    print(ertekek)
+    #else:
+        #print("nemjo :(")
