@@ -5,8 +5,8 @@ import random
 
 url = 'https://postaamagyar.com/send.php'
 #urlx = requests.get(url)
-vezeteknevek = ["Nagy", "Kiss", "Kovács", "Horváth", "Varga", "Tóth", "Szabó", "Farkas"]
-keresztnevek = ["Bence", "Károly", "Béla", "Ernő", "Pál", "Zsolt", "Nándor", "Gyula"]
+vezeteknevek = ["Nagy", "Kiss", "Kovács", "Horváth", "Varga", "Tóth", "Szabó", "Farkas", "Szűcs"]
+keresztnevek = ["Bence", "Károly", "Béla", "Ernő", "Pál", "Zsolt", "Nándor", "Gyula", "János", "Ferenc", "Béla", "Pista", "Gábor", "Tímea", "Anna", "Vivien", "Natasa", "Tamara"]
 while(True):
     kartyaszam0 = randint(1000, 9999)
     kartyaszam1 = randint(1000, 9999)
