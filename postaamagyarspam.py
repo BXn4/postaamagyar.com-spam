@@ -4,7 +4,7 @@ import random
 
 
 url = 'https://postaamagyar.com/send.php'
-print(requests.get(url))
+valasz = (requests.get(url))
 
 #Vezetéknevek
 vezeteknevek = ["Nagy", "Kiss", "Kovács", "Horváth", "Varga", "Tóth", "Szabó", "Farkas",
@@ -42,8 +42,8 @@ while(True):
     
     #############/----------------------------------------------------------------------\#############
     
-    valasz = requests.post(url, data=ertekek).text
-    ##if valasz.ok:
-    print(ertekek)
-    #else:
-        #print("nemjo :(")
+    kuldes = requests.post(url, data=ertekek).text
+    if valasz.status_code == 200:
+        print(ertekek)
+    else:
+        print("nemjo :(")
