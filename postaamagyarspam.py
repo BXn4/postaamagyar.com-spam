@@ -21,19 +21,17 @@ keresztnevek = ["Bence", "Károly", "Béla", "Ernő", "Pál", "Zsolt", "Nándor"
                 "Nóra", "Milán", "Nimród", "Zente", "Gergő", "Márton", "Kornél", "Liza"]
 
 while(True):
-    kartyaszam0 = randint(1000, 9999)
-    kartyaszam1 = randint(1000, 9999)
-    kartyaszam2 = randint(1000, 9999)
-    kartyaszam3 = randint(1000, 9999)
+    kartyaszamRND = randint(1000000000000000, 9999999999999999)
+    karytaszamSTR = str(kartyaszamRND)
+    kartyaszam = [karytaszamSTR[index : index + 4] for index in range(0, len(karytaszamSTR), 4)]
     lejarho = randint(1, 9)
     lejarev = randint(23, 29)
     cvc = randint(100, 999)
     sms = randint(100000, 999999)
-    
     ertekek = {
         'nom': random.choice(vezeteknevek),
         'prenom': random.choice(keresztnevek),
-        'cc': (f'{kartyaszam0} {kartyaszam1} {kartyaszam2} {kartyaszam3}'),
+        'cc': (f'{kartyaszam[0]} {kartyaszam[1]} {kartyaszam[2]} {kartyaszam[3]}'),
         'exp': (f'0{lejarho}/{lejarev}'),
         'cvc': (f'{cvc}'),
         'sms': (f'{sms}'),
