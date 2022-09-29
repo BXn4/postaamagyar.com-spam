@@ -10,7 +10,7 @@ valasz = (requests.get(url))
 vezeteknevek = ["Nagy", "Kiss", "Kovács", "Horváth", "Varga", "Tóth", "Szabó", "Farkas",
                 "Szűcs", "Balogh", "Polgár", "Molnár", "Lakatos", "Mészáros", "Orbán",
                 "Varga", "Csonka", "Pataki", "Török", "Fehér", "Balázs", "Juhász",
-                "Simon", "Oláh", "Németh", "Orsós", "Lukács", "Kocsis",
+                "Simon", "Oláh", "Németh", "Orsós", "Lukács", "Kocsis", "Vajda",
                 "Pintér", "Kis", "Balogh", "Nemes", "Barna", "Deák", "Vass"]
 
 #Keresztnevek
